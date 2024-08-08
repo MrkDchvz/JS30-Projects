@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.clock-body {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid red;
+    
+    position: relative;
+}
+
+.clock-hand {
+    width: 4px;
+    height: 160px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    /* Change the point of rotation to the */
+    transform-origin: bottom center;
+    /* transition: all 100ms ease; */
+}
+
+.clock-hand--hour {
+    background-color: green
+}
+
+.clock-hand--minute {
+    background-color: blue;
+}
+
+.clock-hand--second {
+    background-color: red;
+}

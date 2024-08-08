@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="title">
+            <h1>Update CSS Variables with <span>JS</span></h1>
+        </section>
+        <!-- This is where the output from screen is manipulated -->
+        <section class="config">
+            <div class="config__field">
+                <label for="input--spacing" class="field__header">Spacing</label>
+                <input type="range" min="0" max="100" class="input" id="input--spacing">
+            </div> 
+            <div class="config__field">
+                <label for="input--blur" class="field__header">blur</label>
+                <input type="range" min="0" max="10" class="input" id="input--blur"> 
+            </div>
+            <div class="config__field">
+                <label for="input--color" class="field__header">Background</label>
+                <input type="color" class="input" id="input--color">
+            </div>
+        </section>
+        <!-- This is where the output from the manipulating the sliders appears -->
+        <section class="screen">
+            <div class="backscreen">
+                <img class="frontscreen" src="images/fern.PNG" alt="fern from frieren pouting">
+            </div>
+
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

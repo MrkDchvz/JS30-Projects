@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drumkit</title>
+</head>
+<body>
+    <main>
+        <section class="drum-container">
+            <div class="button" data-key="A"><h2>A</h2><p>clap</p></div>
+            <div class="button" data-key="S"><h2>S</h2><p>hihat</p></div>
+            <div class="button" data-key="D"><h2>D</h2><p>kick</p></div>
+            <div class="button" data-key="F"><h2>F</h2><p>openhat</p></div>
+            <div class="button" data-key="G"><h2>G</h2><p>boom</p></div>
+            <div class="button" data-key="H"><h2>H</h2><p>ride</p></div>
+            <div class="button" data-key="J"><h2>J</h2><p>snare</p></div>
+            <div class="button" data-key="K"><h2>K</h2><p>tom</p></div>
+            <div class="button" data-key="L"><h2>L</h2><p>tink</p></div>
+        </section>
+        <section class="drum-audio">
+            <audio id="audio-clap" data-key="A">
+                <source src="sounds/clap.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-boom" data-key="G">
+                <source src="sounds/boom.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-hihat" data-key="S">
+                <source src="sounds/hihat.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-kick" data-key="D">
+                <source src="sounds/kick.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-openhat" data-key="F">
+                <source src="sounds/openhat.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-ride" data-key="H">
+                <source src="sounds/ride.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-snare" data-key="J">
+                <source src="sounds/snare.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-tink" data-key="L">
+                <source src="sounds/tink.wav" type="audio/wav">
+            </audio>
+            <audio id="audio-tom" data-key="K">
+                <source src="sounds/tom.wav" type="audio/wav">
+            </audio>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

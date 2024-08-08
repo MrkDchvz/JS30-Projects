@@ -1,0 +1,68 @@
+:root {
+    --bg-color: white;
+    --blur: 0px;
+    --spacing: 0%;
+}
+
+
+*,
+*::before,
+*::after,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    width: 50%;
+    height: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.config__field {
+    margin-bottom: 1rem;
+}
+
+.config {
+    width: 25rem;
+    border: 1px solid red;
+}
+
+.input {
+    display: block;
+}
+
+.screen {
+    width: 50rem;
+    border: 2px solid red;
+    filter: blur(var(--blur));
+}
+
+.backscreen {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    background-color: var(--bg-color);
+}
+
+.frontscreen {
+    position: absolute;
+    top: var(--spacing);
+    left: var(--spacing);
+}
+
+
+

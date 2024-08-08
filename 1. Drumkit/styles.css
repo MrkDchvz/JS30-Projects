@@ -1,0 +1,61 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Drums Layout */
+.drum-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    gap: 1rem;
+
+}
+
+.button {
+    text-align: center;
+    border: 1px solid red;
+    width: 100px;
+    padding: 1rem 0.5rem;
+}
+
+.button p {
+    text-transform: uppercase;
+    
+}
+
+
+
+.animate {
+    animation: pulse 10ms ease-in;
+}
+
+
+@keyframes pulse {
+
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+        background-color: aqua;
+    }
+}
