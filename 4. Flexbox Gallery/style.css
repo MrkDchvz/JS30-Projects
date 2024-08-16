@@ -1,0 +1,91 @@
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+image {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    flex: 1 0 auto
+}
+
+.flex-child {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;    
+    overflow: hidden;
+    flex: 1;
+    transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+
+.flex-child img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.flex-child.active {
+    flex: 5;
+}
+
+
+
+
+p {
+    font-size: 2rem;
+    color: wheat;
+    position: absolute;
+    transition: 
+        transform 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        font 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+} 
+
+
+.mid-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flex-child.active .mid-text {
+    font-size: 100px;
+} 
+
+.top-text {
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(4px);
+}
+
+.flex-child.active .top-text {
+    top: 10%;
+    filter: blur(0);
+}
+
+.bottom-text {
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(4px);
+}
+
+.flex-child.active .bottom-text {
+    bottom: 10%;
+    filter: blur(0);
+}
