@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#main-container {
+    max-width: fit-content;
+    margin: auto auto;
+    border: 1px solid red;
+}
+
+.task {
+    border-bottom: 1px solid grey;
+    display: flex;
+    gap: 1.5rem;
+    padding-inline: 1.5rem ;
+}
+
+.task > p {
+
+    padding: 1rem 2rem;
+    border-left: 1px solid grey;
+}
+
+.checkbox:checked + p  {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
