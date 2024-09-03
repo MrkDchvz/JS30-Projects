@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.todos {
+    max-width: fit-content;
+    margin: auto;
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: center;
+}
+
+.todos__list__task {
+    display: flex; 
+    gap: 1rem;
+    border-bottom: 1px solid grey;
+    padding: 1rem;
+}
+
+.todos__list__task__delete {
+    margin-left:  auto;
+}
+
+.todos__input__submit {
+    padding: 0.5em 1em;
+}
+
